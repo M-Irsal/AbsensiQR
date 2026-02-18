@@ -1,0 +1,5 @@
+// Run
+java --enable-native-access=ALL-UNNAMED -cp "lib/*;bin" Main
+
+//Compile
+javac -cp "lib/*;src" -d bin src\*.java src\config\*.java src\controller\*.java src\model\*.java src\view\*.java

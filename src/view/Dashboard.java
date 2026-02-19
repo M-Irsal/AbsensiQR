@@ -411,20 +411,20 @@ public class Dashboard extends JFrame {
             BorderFactory.createLineBorder(new Color(220, 220, 220), 1),
             BorderFactory.createEmptyBorder(20, 20, 20, 20)
         ));
-        infoCard.setPreferredSize(new Dimension(450, 200));
+        infoCard.setPreferredSize(new Dimension(800, 300));
         
         Sekolah sekolah = SessionManager.getInstance().getCurrentSekolah();
-        String infoText = "<html><h3>Sistem Absensi QR Code</h3>";
+        String infoText = "<html><h3 style='font-size:14px; margin-bottom:6px; text-align:center;'>Sistem Absensi QR Code</h3>";
         if (sekolah != null) {
             infoText += "<p><b>" + sekolah.getNamaSekolah() + "</b></p>";
         }
         infoText += "<p>Total siswa terdaftar: <b>" + controller.getAllSiswa().size() + "</b> orang</p>"
-            + "<p>Gunakan menu di samping untuk mengakses fitur:</p>"
-            + "<ul>"
-            + "<li><b>Data Siswa</b> - Kelola data siswa</li>"
-            + "<li><b>Absensi QR</b> - Scan QR Code</li>"
-            + "<li><b>Laporan</b> - Kirim laporan/pengaduan</li>"
-            + "</ul></html>";
+    + "<p>Gunakan menu di samping untuk mengakses fitur:</p>"
+    + "<ul style='margin-left:0px; padding-left:0px; list-style-position:inside;'>"
+    + "<li><b>Data Siswa</b> - Kelola data siswa</li>"
+    + "<li><b>Absensi QR</b> - Scan QR Code</li>"
+    + "<li><b>Laporan</b> - Kirim laporan/pengaduan</li>"
+    + "</ul></html>";
         
         JLabel infoLabel = new JLabel(infoText);
         infoLabel.setFont(new Font("Segoe UI", Font.PLAIN, 14));

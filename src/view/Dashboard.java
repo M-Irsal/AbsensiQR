@@ -411,7 +411,7 @@ public class Dashboard extends JFrame {
             BorderFactory.createLineBorder(new Color(220, 220, 220), 1),
             BorderFactory.createEmptyBorder(20, 20, 20, 20)
         ));
-        infoCard.setPreferredSize(new Dimension(450, 150));
+        infoCard.setPreferredSize(new Dimension(450, 200));
         
         Sekolah sekolah = SessionManager.getInstance().getCurrentSekolah();
         String infoText = "<html><h3>Sistem Absensi QR Code</h3>";

@@ -316,7 +316,7 @@ public class FormAbsensi extends JFrame {
         tableAbsensi.setRowHeight(25);
         tableAbsensi.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
         tableAbsensi.getTableHeader().setBackground(new Color(70, 130, 180));
-        tableAbsensi.getTableHeader().setForeground(Color.WHITE);
+        tableAbsensi.getTableHeader().setForeground(new Color(93, 173, 226));
         
         JScrollPane scrollPane = new JScrollPane(tableAbsensi);
         scrollPane.setBorder(BorderFactory.createLineBorder(new Color(220, 220, 220)));

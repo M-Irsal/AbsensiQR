@@ -283,7 +283,7 @@ panel.add(btnDownloadQR, gbc);
     tableSiswa.setRowHeight(25);
     tableSiswa.getTableHeader().setFont(new Font("Segoe UI", Font.BOLD, 12));
     tableSiswa.getTableHeader().setBackground(new Color(70, 130, 180));
-    tableSiswa.getTableHeader().setForeground(Color.WHITE);
+    tableSiswa.getTableHeader().setForeground(new Color(93, 173, 226));
     tableSiswa.setSelectionBackground(new Color(184, 207, 229));
     
     // Add selection listener
